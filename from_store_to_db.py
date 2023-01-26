@@ -2,9 +2,6 @@ import json
 from playhouse.reflection import generate_models
 from peewee import *
 
-db = PostgresqlDatabase('transfers', user='admin', password='admin231415',
-                        host='45.143.93.237', port=5432)
-
 models = generate_models(db)
 globals().update(models)
 
