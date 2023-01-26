@@ -2,6 +2,7 @@ import json
 from playhouse.reflection import generate_models
 from peewee import *
 
+
 models = generate_models(db)
 globals().update(models)
 
